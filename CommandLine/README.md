@@ -13,7 +13,7 @@
 你能获取到的信息：
 
 ```
-
+返回 Git 的版本。
 ```
 
 ### 2
@@ -27,7 +27,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+使用 fish shell用户友好的命令行界面运行了 git --version 命令。
 ```
 
 ### 3
@@ -37,7 +37,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+表示你当前的系统状态、路径和时间信息。
 ```
 
 ### 4
@@ -47,7 +47,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+某个东西成功了（？）。
 ```
 
 ### 5
@@ -64,7 +64,7 @@ PS C:\Users\Caiyi Hsu>
 你能获取到的信息：
 
 ```
-
+表示 PowerShell 是由微软公司开发的，并且微软对其拥有版权。并提示你可以安装 PowerShell 的最新版本，访问提供的链接 https://aka.ms/PSWindows查看如何更新。当前路径是 C:\Users\Caiyi Hsu。
 ```
 
 ### 6
@@ -77,7 +77,7 @@ $ git --version
 你能获取到的信息：
 
 ```
-
+使用Git Bash并输入了命令来查看 Git 的版本。
 ```
 
 ## 编写命令
@@ -130,13 +130,13 @@ $ git --version
 
 ## 填空题
 
-1. 给出一个常用的打印文件内容的命令：____
+1. 给出一个常用的打印文件内容的命令：__cat__
 
-2. 给出一个常用的创建空文件夹的命令：____
+2. 给出一个常用的创建空文件夹的命令：mkdir
 
-3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：____
+3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：_chmod +x a.out_
 
-4. 在 Shell 中输出 "Hello, world" 的命令：____
+4. 在 Shell 中输出 "Hello, world" 的命令：_echo "Hello, world"_
 
 ## 简答题
 
@@ -155,7 +155,7 @@ $ git --version
 提示：利用环境变量
 
 ```
-在这里简述你的操作
+export PATH=~/riscv-gcc/bin:$PATH 将工具链的 bin 文件夹路径添加到 PATH 变量的开头。
 ```
 
 ## 可选附加作业(自学)
@@ -164,10 +164,17 @@ $ git --version
 
 使用 1 行shell命令，在当前文件夹的 a.txt 中写入 "Hello, "
 
+echo "Hello, " > a.txt
+
 ### 2
 
 使用 1 行shell命令，在上一题的的 a.txt 中追加 "world!"
 
+echo "world!" >> a.txt
+
 ### 3
 
 同过软链接的方式解决[简答题](#简答题)的内容
+
+ln -s ~/riscv-gcc/bin/g++-riscv64 /usr/local/bin/g++-riscv64
+ln -s ~/riscv-gcc/bin/gcc-riscv64 /usr/local/bin/gcc-riscv64
